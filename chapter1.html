@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+    <title>Chapter-1:Database management</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div> 
+       <nav class="navbar">
+<div><h1 class="logo"><a href="#">Computer grade 12</a></h1></div>
+    <div>
+        <ul id="leftf">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="chapter1.html">Chapters</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="Notes.html ">Notes</a></li>
+            
+        </ul>
+       </div>
+    </nav>
+    </div>
+
+
+
+  <div class="c1_heading">
+    <h1>Chapter-1:Database management system</h1>
+  </div>
+
+
+<div class="c1_content">
+
+<h3>Data</h3>
+<p>Data refers to raw facts and figures without any context. It can be numbers, characters, or symbols collected for analysis and processing.</p>
+
+<h3>Information</h3>
+<p>Information is processed data that is meaningful and useful for decision-making.</p>
+
+<h3>Features of Information</h3>
+<p>Information should be accurate, relevant, timely, complete, and understandable.</p>
+
+<h3>Database and its Purpose</h3>
+<p>A database is an organized collection of data that allows easy access, management, and updating. Its purpose is to store and retrieve data efficiently.</p>
+
+<h3>Terminologies in Database</h3>
+<ul>
+    <li><strong>Table:</strong> Collection of related data entries organized in rows and columns.</li>
+    <li><strong>Field:</strong> A single piece of data or attribute in a table (column).</li>
+    <li><strong>Record:</strong> A row in a table representing a single data item.</li>
+    <li><strong>Tuple:</strong> Another term for a record or row in relational databases.</li>
+    <li><strong>Object:</strong> In object-oriented databases, it is an instance of a class containing data and behavior.</li>
+    <li><strong>Keys:</strong> Attributes used to identify records uniquely (e.g., primary key).</li>
+</ul>
+
+<h3>Data Dictionary</h3>
+<p>A data dictionary contains metadata — data about data — describing the structure, relationships, and constraints of data in a database.</p>
+
+<h3>Database Management System (DBMS)</h3>
+
+<h4>Introduction</h4>
+<p>A DBMS is software that interacts with users, applications, and the database itself to capture and analyze data.</p>
+
+<h4>Objectives</h4>
+<ul>
+    <li>To provide a convenient and efficient environment for users to store and retrieve data.</li>
+    <li>To ensure data integrity and security.</li>
+    <li>To manage data efficiently and provide multi-user access.</li>
+</ul>
+
+<h4>Advantages</h4>
+<ul>
+    <li>Data sharing and security.</li>
+    <li>Reduced data redundancy.</li>
+    <li>Improved data integrity and consistency.</li>
+</ul>
+
+<h4>Disadvantages</h4>
+<ul>
+    <li>Cost of hardware and software.</li>
+    <li>Complexity in design and maintenance.</li>
+    <li>Potential for system failures affecting all users.</li>
+</ul>
+
+<h3>Types of Database Model</h3>
+
+<h4>Hierarchical</h4>
+<p>Data is organized in a tree-like structure with parent-child relationships.</p>
+
+<h4>Network</h4>
+<p>Data is organized using a graph structure allowing many-to-many relationships.</p>
+
+<h4>Relational</h4>
+<p>Data is organized into tables (relations) with rows and columns; uses SQL.</p>
+
+<h4>Entity Relational</h4>
+<p>Uses diagrams to model data entities and relationships visually.</p>
+
+<h3>Integrity Constraints and Types</h3>
+
+<h4>Domain</h4>
+<p>Specifies the permissible values for a given attribute.</p>
+
+<h4>Entity</h4>
+<p>Ensures each entity has a unique identifier.</p>
+
+<h4>Referential</h4>
+<p>Maintains consistency among tuples in different relations using foreign keys.</p>
+
+<h4>Keys</h4>
+<p>Uniquely identify tuples in a table, e.g., primary key, candidate key.</p>
+
+<h3>Normalization</h3>
+
+<h4>Introduction</h4>
+<p>Process of organizing data to minimize redundancy and improve data integrity.</p>
+
+<h4>Normal Forms</h4>
+
+<table>
+    <caption>Normal Forms</caption>
+    <thead>
+        <tr>
+            <th>Form</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1NF (First Normal Form)</td>
+            <td>Eliminates duplicate columns; ensures atomicity of data.</td>
+        </tr>
+        <tr>
+            <td>2NF (Second Normal Form)</td>
+            <td>Removes subsets of data that apply to multiple rows; ensures full functional dependency.</td>
+        </tr>
+        <tr>
+            <td>3NF (Third Normal Form)</td>
+            <td>Removes columns that are not dependent on the primary key.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Advantages</h4>
+<ul>
+    <li>Reduces data redundancy.</li>
+    <li>Improves data integrity.</li>
+    <li>Facilitates efficient updates.</li>
+</ul>
+
+<h4>Disadvantages</h4>
+<ul>
+    <li>Complex queries due to many tables.</li>
+    <li>Performance overhead from joins.</li>
+</ul>
+
+<h3>Centralized and Distributed Database</h3>
+
+<h4>Introduction</h4>
+<p>Centralized database stores data at a single location; distributed database stores data across multiple locations.</p>
+
+<h4>Advantages</h4>
+<ul>
+    <li><strong>Centralized:</strong> Easier management and control.</li>
+    <li><strong>Distributed:</strong> Improved reliability and faster access locally.</li>
+</ul>
+
+<h4>Disadvantages</h4>
+<ul>
+    <li><strong>Centralized:</strong> Single point of failure and bottleneck.</li>
+    <li><strong>Distributed:</strong> Complexity in synchronization and management.</li>
+</ul>
+
+<h4>Comparison</h4>
+<table>
+    <caption>Centralized vs Distributed Database</caption>
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Centralized</th>
+            <th>Distributed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Location</td>
+            <td>Single site</td>
+            <td>Multiple sites</td>
+        </tr>
+        <tr>
+            <td>Failure Impact</td>
+            <td>High</td>
+            <td>Lower</td>
+        </tr>
+        <tr>
+            <td>Management</td>
+            <td>Simpler</td>
+            <td>Complex</td>
+        </tr>
+        <tr>
+            <td>Access Speed</td>
+            <td>Slower for remote users</td>
+            <td>Faster locally</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Database Security</h3>
+
+<h4>Introduction</h4>
+<p>Database security involves protecting data from unauthorized access, misuse, or threats.</p>
+
+<h4>Challenges</h4>
+<ul>
+    <li>Unauthorized access and hacking.</li>
+    <li>Data breaches and leaks.</li>
+    <li>Backup failures and data loss.</li>
+</ul>
+
+<h4>Security Measures</h4>
+<ul>
+    <li>Authentication and access control.</li>
+    <li>Encryption of sensitive data.</li>
+    <li>Regular backups and audits.</li>
+</ul>
+
+<h4>Roles of DBA</h4>
+<ul>
+    <li>Manage database security and integrity.</li>
+    <li>Perform backups and recovery.</li>
+    <li>Optimize performance and manage access.</li>
+</ul>
+
+<h3>Practical Topics: DDL and DML Languages</h3>
+<p><strong>DDL (Data Definition Language):</strong> Commands that define database structure (e.g., CREATE, ALTER, DROP).</p>
+<p><strong>DML (Data Manipulation Language):</strong> Commands to manipulate data (e.g., INSERT, UPDATE, DELETE, SELECT).</p>
+
+<h3>SQL Data Types</h3>
+
+<table>
+    <caption>Common SQL Data Types</caption>
+    <thead>
+        <tr>
+            <th>Data Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td class="tdmargin">CHAR</td><td>Fixed-length character string.</td></tr>
+        <tr><td class="tdmargin">VARCHAR</td><td>Variable-length character string.</td></tr>
+        <tr><td class="tdmargin">BINARY</td><td>Fixed-length binary data.</td></tr>
+        <tr><td class="tdmargin">VARBINARY</td><td>Variable-length binary data.</td></tr>
+        <tr><td class="tdmargin">TINYBLOB</td><td>Very small binary large object.</td></tr>
+        <tr><td class="tdmargin">TINYTEXT</td><td>Very small text data.</td></tr>
+        <tr><td class="tdmargin">TEXT</td><td>Text data of variable length.</td></tr>
+        <tr><td class="tdmargin">LONGTEXT</td><td>Very long text data.</td></tr>
+        <tr><td class="tdmargin">ENUM</td><td>Enumeration, a list of possible values.</td></tr>
+        <tr><td class="tdmargin">BIT</td><td>Bit field or Boolean data.</td></tr>
+        <tr><td class="tdmargin">TINYINT</td><td>Very small integer.</td></tr>
+        <tr><td class="tdmargin">BOOLEAN</td><td>Boolean value TRUE or FALSE.</td></tr>
+        <tr><td class="tdmargin">INTEGER</td><td>Standard integer number.</td></tr>
+        <tr><td class="tdmargin">FLOAT</td><td>Floating point number.</td></tr>
+        <tr><td class="tdmargin">DOUBLE</td><td>Double precision floating point number.</td></tr>
+        <tr><td class="tdmargin">DECIMAL</td><td>Exact numeric with fixed decimal points.</td></tr>
+        <tr><td class="tdmargin">DATE</td><td>Date value.</td></tr>
+        <tr><td class="tdmargin">DATETIME</td><td>Date and time value.</td></tr>
+    </tbody>
+</table>
+
+  </div>
+    
+</body>
