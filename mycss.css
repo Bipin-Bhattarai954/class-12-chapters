@@ -1,0 +1,175 @@
+body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #111827;   
+        }
+      .navbar{
+        background-color: #0d111c;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 40px;
+        
+      }
+      .navbar a{
+           text-decoration: none;
+           color: white;
+           display:block;
+           text-align: center;
+           padding: 4px;
+           border-radius: 10px;
+           background-color:rgb(255, 165, 0);
+           font-size: 30px;
+           font-family: 'Pacifico', cursive;
+           
+          
+      }
+      .navbar ul{
+        list-style-type: none;
+        overflow: hidden;
+        
+        
+      }
+      .navbar li{
+        padding: 5px;
+        float: left;
+      }
+      .logo a{
+        background-color:#111827;
+        font-size: 60px;
+        margin-left: 1%;
+        border-radius: 50px;
+        
+      }
+      .logo a:hover{
+           background-color:#121723;
+      }
+      .navbar a:hover{
+        background-color: #374151;
+      }
+      #leftf{
+        float: left;
+        padding-top: 12px;
+      }
+      .intro{
+        align-items: center;
+        width:50vw;
+        padding: 40px;
+        margin-top: 3% !important;
+        border: 1px solid white;
+        margin-left: 23%;
+        box-shadow: -10px 0 10px;
+        margin-right: 20%;
+        font-family: Garamond, serif;
+      }
+      .intro h3{
+        font-size: 75px;
+        color: white;
+        text-align: center;
+      }
+      .intro p{
+        font-size: 30px;
+        text-align: justify;
+        color: white;
+      }
+      #when_clicked{
+      background-color: rgb(98, 12, 178);
+     }
+     .book1{
+      position: absolute;
+      width: 20%;
+      margin-top: 8%;
+     }
+     .book2{
+      position: absolute;
+     right: 1%;
+      width: 20%;
+      margin-top: 8%;
+     }
+     .hr1{
+      margin-top: 10%;
+     }
+/* table of content*/
+
+.toc ul{
+  background-color: #0c1f3d;
+  border-radius: 20px;
+  list-style-type: none;
+  margin-right: 75%;
+  position:fixed;
+
+
+  
+  width: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  
+}
+.toc a{
+  text-decoration: none;
+  color: 	#FFF8E1;
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+}
+.toc li{
+  padding-top: 3%;
+  padding-bottom:3%;
+}
+.toc li :hover{
+  border-left: solid red 2px;
+  font-size: large;
+  
+  
+}
+
+h1{
+  font-family: 'WDXL Lubrifont SC', sans-serif;
+  color: #3B82F6;
+  font-style: italic;
+  font-size: 100px;
+}
+
+
+
+
+/* FOR CHAPTER ONE     */
+
+.c1_heading{
+    text-align: center;
+    color: azure;
+    font-family: 'Vex Shadow', cursive;
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+     h2, h3 {
+  font-family: 'WDXL Lubrifont SC', sans-serif;
+  color: #3B82F6;
+  font-style: italic;
+}
+.c_content{
+   color: white;
+   font-size: larger;
+   margin-left: 15%;
+   
+}
+.tdmargin{
+  padding: 3%;
+}
+
+/* FOR GRID */
+.gridtable{
+  margin: 2%;
+  font-size: 50px;
+}
+table,th, td{
+  border-collapse: collapse;
+  color: white;
+  border: 1px solid;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+

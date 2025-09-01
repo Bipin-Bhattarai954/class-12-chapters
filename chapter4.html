@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+    <title>Chapter-2:Programming in C</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div> 
+       <nav class="navbar">
+<div><h1 class="logo"><a href="#">Computer grade 12</a></h1></div>
+    <div>
+        <ul id="leftf">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="chapter1.html">Chapters</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="Notes.html ">Notes</a></li>
+        </ul>
+       </div>
+    </nav>
+    </div>
+
+<div class="toc">
+    <ul>
+    <li><a href="chapter1.html">Chapter 1:Database Management System</a></li>
+    <li><a href="chapter2.html">Chapter 2:Data Communication and Networking</a></li>
+    <li><a href="chapter3.html">Chapter 3:Web technology II</a></li>
+    <li><a href="chapter4.html">Chapter 4:Programming in C</a></li>
+    <li><a href="chapter5.html">Chapter 5:Object- Oriented Programming (OOP)</a></li>
+    <li><a href="chapter6.html">Chapter 6:Software Process Model</a></li>
+    <li><a href="chapter7.html">Chapter 7:Recent Trends in Technology</a></li> 
+    </ul>
+</div>
+
+  <div class="c1_heading">
+    <h1>Chapter-4:Programming in C</h1>
+  </div>
+
+
+<div class="c_content">
+    <h3>Working with function</h3>
+
+<p><b>a. Define Function:</b> A function is a block of code that performs a specific task and can be reused throughout the program.</p>
+
+<p><b>b. Syntax of Function:</b></p>
+
+<pre>
+return_type function_name(parameter_list) {
+    // code block
+}
+</pre>
+
+<p><b>c. Types of Functions:</b></p>
+
+<ul>
+  <li><b>Library Functions:</b> Predefined functions like printf(), scanf(), etc.</li>
+  <li><b>User-defined Functions:</b> Created by the programmer to perform specific tasks.</li>
+</ul>
+
+<p><b>d. Components of Function:</b></p>
+
+<ul>
+  <li><b>i. Function Prototype:</b> Declaration of function before main.<br><code>int sum(int, int);</code></li>
+  <li><b>ii. Function Call:</b> Calling the function inside main or another function.<br><code>sum(2, 3);</code></li>
+  <li><b>iii. Function Definition:</b> Actual implementation of the function.</li>
+</ul>
+
+<pre>
+int sum(int a, int b) {
+    return a + b;
+}
+</pre>
+
+<p><b>iv. Return Type:</b> The data type the function returns (e.g., int, float, void).</p>
+
+<br>
+
+<p><b>2. Categories of Functions with Example:</b></p>
+
+<p><b>i. Function with return type but no arguments:</b></p>
+
+<pre>
+int getValue() {
+    return 10;
+}
+</pre>
+
+<p><b>ii. Function with return type with arguments:</b></p>
+
+<pre>
+int sum(int a, int b) {
+    return a + b;
+}
+</pre>
+
+<p><b>iii. Function with no return type with no arguments:</b></p>
+
+<pre>
+void greet() {
+    printf("Hello!");
+}
+</pre>
+
+<p><b>iv. Function with no return type with arguments:</b></p>
+
+<pre>
+void printSquare(int n) {
+    printf("%d", n * n);
+}
+</pre>
+
+<br>
+
+<p><b>3. Storage Classes:</b></p>
+
+<p><b>i. Automatic (auto):</b> Default for local variables, automatically created and destroyed.</p>
+
+<pre>
+void func() {
+    auto int x = 5;
+}
+</pre>
+
+<p><b>ii. External (extern):</b> Declares a global variable defined elsewhere.</p>
+
+<pre>
+extern int x;
+</pre>
+
+<p><b>iii. Register:</b> Suggests storing variable in CPU register for speed.</p>
+
+<pre>
+register int i;
+</pre>
+
+<p><b>iv. Static:</b> Retains value between function calls.</p>
+
+<pre>
+void count() {
+    static int x = 0;
+    x++;
+    printf("%d", x);
+}
+</pre>
+
+<br>
+
+<p><b>4. Recursive Function (with syntax and example):</b></p>
+
+<pre>
+#include <stdio.h>
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+int main() {
+    int num = 5;
+    printf("Factorial of %d is %d\n", num, factorial(num));
+    return 0;
+}
+
+
+</pre>
+<img src="Screenshot 2025-07-11 145124.png">
+<br>
+
+<p><b>5. Demonstration of Passing Array to a Function:</b></p>
+
+<pre>
+#include &lt;stdio.h&gt;
+
+void display(int arr[], int size) {
+    for(int i = 0; i &lt; size; i++)
+        printf("%d ", arr[i]);
+}
+
+int main() {
+    int nums[] = {1, 2, 3, 4};
+    display(nums, 4);
+    return 0;
+}
+
+</pre>
+<img src="Screenshot 2025-07-11 145446.png">
+
+<h2>--------Remaining portion---------</h2>
+<h2>Structure in C</h2>
+
+<h3>Introduction and Syntax</h3>
+<p>A structure is a user-defined data type in C that allows grouping variables of different types under one name.</p>
+<pre>
+struct Student {
+    int id;
+    char name[50];
+    float marks;
+};
+</pre>
+
+<h3>Structure Size</h3>
+<p>The size of a structure is the sum of sizes of its members plus any padding added for alignment.</p>
+
+<h3>Accessing Members of Structure</h3>
+<pre>
+struct Student s1;
+s1.id = 1;
+strcpy(s1.name, "John");
+s1.marks = 85.5;
+</pre>
+
+<h3>Nested Structure</h3>
+<pre>
+struct Date {
+    int day, month, year;
+};
+
+struct Student {
+    int id;
+    struct Date dob;
+};
+</pre>
+
+<h3>Array of Structures</h3>
+<pre>
+struct Student students[3];
+students[0].id = 1;
+</pre>
+
+<h3>Passing Structure to Function</h3>
+<pre>
+void display(struct Student s) {
+    printf("%d %s %.2f", s.id, s.name, s.marks);
+}
+</pre>
+
+<hr>
+
+<h2>Union in C</h2>
+
+<h3>Introduction and Syntax</h3>
+<p>Union allows storing different data types in the same memory location, but only one member can contain a value at any given time.</p>
+<pre>
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+</pre>
+
+<h3>Comparison between Structure and Union</h3>
+<pre>
+Structure: Memory allocated for all members.
+Union: Shared memory for all members (size of largest member).
+</pre>
+
+<hr>
+
+<h2>Pointers in C</h2>
+
+<h3>Introduction and Syntax</h3>
+<pre>
+int *ptr;
+</pre>
+
+<h3>Concept of Value and Address</h3>
+<pre>
+int a = 10;
+int *p = &a;
+printf("%d", *p); // value
+printf("%p", p);  // address
+</pre>
+
+<h3>Declaration and Initialization</h3>
+<pre>
+int a = 5;
+int *p = &a;
+</pre>
+
+<h3>Pointer and Function</h3>
+<pre>
+void print(int *p) {
+    printf("%d", *p);
+}
+</pre>
+
+<h3>Call by Reference</h3>
+<pre>
+void update(int *x) {
+    *x = *x + 1;
+}
+</pre>
+
+<h3>Call by Value vs Call by Reference</h3>
+<pre>
+Value: Function gets a copy, original not changed.
+Reference: Function modifies original value.
+</pre>
+
+<h3>Pointer with Arrays</h3>
+<pre>
+int arr[5] = {1,2,3,4,5};
+int *p = arr;
+</pre>
+
+<h3>Advantages and Disadvantages</h3>
+<pre>
++ Efficient memory handling
+- Can lead to segmentation faults if misused
+</pre>
+
+<hr>
+
+<h2>File Handling in C</h2>
+
+<h4>Concept of Data File</h4>
+<p>Files store data permanently unlike variables which store in memory temporarily.</p>
+
+<h4>Need for File Handling</h4>
+<p>To read/write data even after the program ends.</p>
+
+<h4>Types of Files</h4>
+<p>Sequential and Random Access Files</p>
+
+<h3>File Handling Functions</h3>
+<pre>
+FILE *fopen(const char *filename, const char *mode);
+int fclose(FILE *stream);
+int getc(FILE *stream);
+int putc(int char, FILE *stream);
+int fprintf(FILE *stream, const char *format, ...);
+int fscanf(FILE *stream, const char *format, ...);
+int getw(FILE *stream);
+int putw(int w, FILE *stream);
+char *fgets(char *str, int n, FILE *stream);
+int fputs(const char *str, FILE *stream);
+size_t fread(void *ptr, size_t size, size_t count, FILE *stream);
+size_t fwrite(const void *ptr, size_t size, size_t count, FILE *stream);
+int remove(const char *filename);
+int rename(const char *oldname, const char *newname);
+</pre>
+
+<h4>Random Access Functions</h4>
+<pre>
+int fseek(FILE *stream, long offset, int origin);
+void rewind(FILE *stream);
+long ftell(FILE *stream);
+</pre>
+
+<h4>File Opening Modes</h4>
+<pre>
+"r"    - Read
+"r+"   - Read/Write
+"w"    - Write (overwrite)
+"w+"   - Read/Write (overwrite)
+"a"    - Append
+"a+"   - Read/Append
+</pre>
+
+<h4>Steps to Work with File</h4>
+<pre>
+1. Declare FILE pointer: FILE *fp;
+2. Open file: fp = fopen("file.txt", "w");
+3. Read/Write using functions
+4. Close file: fclose(fp);
+</pre>
+
+<h4>Reading from File</h4>
+<pre>
+char ch;
+while ((ch = fgetc(fp)) != EOF) {
+    putchar(ch);
+}
+</pre>
+
+<h4>Writing to File</h4>
+<pre>
+fprintf(fp, "Hello World");
+</pre>
+
+<h4>Appending Data to File</h4>
+<pre>
+fp = fopen("file.txt", "a");
+fputs("New Line", fp);
+</pre>
+
+<h4>End of File (EOF)</h4>
+<pre>
+EOF is a marker to indicate end of file.
+</pre>
+
+<hr>
+
+<h2>Typedef Keyword in C</h2>
+
+<p><code>typedef</code> is used to create alias names for existing data types.</p>
+<pre>
+typedef unsigned int uint;
+uint a = 10;
+</pre>
+
+
+
+</div>
